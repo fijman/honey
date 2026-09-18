@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Пасека «Гнездино» — мёд из деревни Гнездино</title>
+<meta name="description" content="Семейная пасека в Гнездино, основана в 1955 году. История места, история пасеки, фотографии ульев и мёд, который здесь получается.">
+<meta name="theme-color" content="#0f0e0c">
+
+<!-- Превью для мессенджеров: когда ссылку кидают в чат или сканируют QR с банки -->
+<meta property="og:title" content="Пасека «Гнездино»">
+<meta property="og:description" content="Откуда этот мёд: место, пасека, пчёлы и люди.">
+<meta property="og:image" content="img/logo.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+<a class="skip-link" href="#place">Перейти к содержанию</a>
+
+<!-- ШАПКА.
+     Логотип слева появляется только после того, как большой логотип
+     на первом экране уехал вверх — иначе они дублируют друг друга. -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="topbar-brand">
+      <img src="img/logo.jpg" alt="" width="32" height="32">
+      <span>Пасека «Гнездино»</span>
+    </a>
+
+    <nav class="topbar-nav" id="topbar-nav" aria-label="Разделы сайта">
+      <a href="#place" data-nav="place">Место</a>
+      <a href="#apiary" data-nav="apiary">Пасека</a>
+      <a href="#photos" data-nav="photos">Фотографии</a>
+      <a href="#honey" data-nav="honey">Мёд</a>
+      <a href="#contacts" data-nav="contacts">Связаться</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="topbar-nav">
+      <span class="sr-only">Открыть меню</span>
+      <span class="burger-lines" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ПЕРВЫЙ ЭКРАН.
+       Человек отсканировал QR на крышке банки и попал сюда — поэтому первое,
+       что он видит, это тот же знак, что и на банке. -->
+  <section class="hero">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-veil" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <img class="hero-logo" src="img/logo.jpg" alt="Логотип пасеки «Гнездино»" width="180" height="180">
+
+      <h1>Мёд из Гнездино</h1>
+      <p class="hero-lede">
+        Если у вас в руках наша банка — вы уже знаете вкус.
+        Здесь рассказываем остальное: что это за место, кто держит пасеку
+        и как этот мёд оказался в банке.
+      </p>
+
+      <a class="hero-down" href="#place">
+        <span>С чего всё начинается</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 16.5 5.5 10l1.4-1.4 5.1 5.1 5.1-5.1L18.5 10z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- МЕСТО. Короткая предыстория деревни: нужна для контекста, не более. -->
+  <section class="place" id="place">
+    <div class="wrap two-col">
+      <div class="col-text">
+        <p class="kicker">Место</p>
+        <h2>Деревня Гнездино</h2>
+        <p>
+          Несколько улиц, речка, поля и лес за околицей. Таких деревень много,
+          но пчёлам важно именно это: рядом нет ни трассы, ни больших хозяйств
+          с обработкой полей, а цветёт здесь с мая по конец августа — сначала сады
+          и ива, потом луговое разнотравье, ближе к осени — поздние травы.
+        </p>
+        <p>
+          <em>Здесь стоит заменить текст на настоящую историю деревни: когда появилась,
+          откуда название, чем жили люди. Достаточно двух-трёх абзацев — это
+          предыстория, а главное дальше.</em>
+        </p>
+
+        <ul class="facts">
+          <li><span>С 1955 года</span>первая пасека на этом месте</li>
+          <li><span>3 поколения</span>семьи занимаются пчёлами</li>
+          <li><span>Май — август</span>здесь цветёт почти без перерывов</li>
+        </ul>
+      </div>
+
+      <div class="col-media">
+        <div class="photo photo-place" role="img" aria-label="Поля и лес вокруг деревни"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПАСЕКА. Главный смысловой блок: от первых ульев до сегодняшнего дня. -->
+  <section class="apiary" id="apiary">
+    <div class="wrap two-col two-col--reverse">
+      <div class="col-media">
+        <div class="photo photo-apiary" role="img" aria-label="Ульи на пасеке"></div>
+      </div>
+
+      <div class="col-text">
+        <p class="kicker">Пасека</p>
+        <h2>Пасека началась не с плана продавать мёд</h2>
+        <p>
+          Первые ульи поставил дед в 1955 году — просто потому, что в хозяйстве
+          нужен был мёд, а место подходило. Потом пасека перешла к отцу, ульев стало
+          больше, и появился порядок, которого держимся до сих пор: пчёл не гоняют
+          по полям за большими сборами и не кормят сахаром ради объёма.
+        </p>
+        <p>
+          Сейчас пасекой занимаемся мы. Мёда каждый год ровно столько, сколько
+          собрали пчёлы, — в хороший сезон больше, в дождливый меньше. Поэтому и банок
+          немного, и каждая с конкретного сбора конкретного года.
+        </p>
+
+        <!-- Таймлайн: годы реальные ставит заказчик, тут опорные точки -->
+        <ol class="timeline">
+          <li>
+            <span class="timeline-year">1955</span>
+            <span class="timeline-text">Дед ставит первые ульи за огородом. Мёд — для семьи и соседей.</span>
+          </li>
+          <li>
+            <span class="timeline-year">1980-е</span>
+            <span class="timeline-text">Пасеку принимает отец, появляются рамочные ульи и свой инвентарь.</span>
+          </li>
+          <li>
+            <span class="timeline-year">Сегодня</span>
+            <span class="timeline-text">Третье поколение. Качаем сами, фасуем сами, возим сами.</span>
+          </li>
+        </ol>
+
+        <blockquote>Если пчёлам хорошо, мёд получается сам собой — торопить тут нечего.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОТОГРАФИИ.
+       Галерея-мозаика: клик по снимку открывает его крупно (см. js/main.js).
+       Сейчас стоят временные фото из открытых источников — заменить на свои. -->
+  <section class="photos" id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Фотографии</p>
+          <h2>Пасека, ульи и всё, что вокруг</h2>
+        </div>
+        <p class="section-note">
+          Снимки с поляны за сезон: от весенней выставки ульев до готового мёда.
+          Нажмите на фотографию, чтобы посмотреть крупно.
+        </p>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <button class="shot shot--tall" type="button"
+                data-src="https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Pasieka%20w%20Trzebieszowicach%201.jpg?width=1600"
+                data-caption="Ульи стоят на краю поляны, лицом к утреннему солнцу">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Pasieka%20w%20Trzebieszowicach%201.jpg?width=800"
+               alt="Ряд ульев на пасеке" loading="lazy">
+          <span class="shot-caption">Ульи на поляне</span>
+        </button>
+
+        <button class="shot" type="button"
+                data-src="https://commons.wikimedia.org/wiki/Special:FilePath/Abeilles%20et%20ruches%2014.JPG?width=1600"
+                data-caption="Пчёлы у летка: по их работе видно, как идёт взяток">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Abeilles%20et%20ruches%2014.JPG?width=800"
+               alt="Пчёлы у входа в улей" loading="lazy">
+          <span class="shot-caption">У летка</span>
+        </button>
+
+        <button class="shot" type="button"
+                data-src="https://commons.wikimedia.org/wiki/Special:FilePath/Beekeeping%20frame.jpg?width=1600"
+                data-caption="Рамка из улья: соты запечатаны воском — значит, мёд созрел">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Beekeeping%20frame.jpg?width=800"
+               alt="Рамка с сотами" loading="lazy">
+          <span class="shot-caption">Рамка перед качкой</span>
+        </button>
+
+        <button class="shot" type="button"
+                data-src="https://commons.wikimedia.org/wiki/Special:FilePath/European%20honey%20bee%20extracts%20nectar.jpg?width=1600"
+                data-caption="Всё начинается здесь — на цветке в двух шагах от ульев">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/European%20honey%20bee%20extracts%20nectar.jpg?width=800"
+               alt="Пчела на цветке" loading="lazy">
+          <span class="shot-caption">Взяток</span>
+        </button>
+
+        <button class="shot shot--wide" type="button"
+                data-src="https://commons.wikimedia.org/wiki/Special:FilePath/Runny%20hunny.jpg?width=1600"
+                data-caption="Свежая качка: мёд ещё тёплый и совсем жидкий">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Runny%20hunny.jpg?width=1000"
+               alt="Свежий жидкий мёд" loading="lazy">
+          <span class="shot-caption">Первый мёд сезона</span>
+        </button>
+
+        <button class="shot" type="button"
+                data-src="https://commons.wikimedia.org/wiki/Special:FilePath/Crystallized%20honey%20with%20close-up.jpg?width=1600"
+                data-caption="Через пару месяцев мёд садится — это нормально и даже хорошо">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Crystallized%20honey%20with%20close-up.jpg?width=800"
+               alt="Засахарившийся мёд крупным планом" loading="lazy">
+          <span class="shot-caption">Севший мёд</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- МЁД. Что именно получается из этого места. Без цен и корзины. -->
+  <section class="honey" id="honey">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Мёд</p>
+          <h2>Что получается из этих полей</h2>
+        </div>
+        <p class="section-note">
+          Сорта зависят от того, что цвело рядом с ульями в этот месяц.
+          Состав каждый год чуть разный — так и должно быть у настоящего мёда.
+        </p>
+      </div>
+
+      <div class="honey-grid">
+        <article class="honey-card">
+          <h3>Майский</h3>
+          <p class="honey-when">Первая качка, начало лета</p>
+          <p>Светлый и текучий, с мягким вкусом. Долго не садится — иногда стоит жидким почти до зимы.</p>
+        </article>
+
+        <article class="honey-card">
+          <h3>Луговое разнотравье</h3>
+          <p class="honey-when">Середина лета</p>
+          <p>Самый ароматный сбор: клевер, донник, чабрец с наших лугов. Кристаллизуется за два-три месяца.</p>
+        </article>
+
+        <article class="honey-card">
+          <h3>Гречишный</h3>
+          <p class="honey-when">Конец июля</p>
+          <p>Тёмный и плотный, с заметной терпкостью. Его обычно берут на зиму, к чаю.</p>
+        </article>
+
+        <article class="honey-card">
+          <h3>Поздний</h3>
+          <p class="honey-when">Август</p>
+          <p>То, что пчёлы успевают собрать перед зимовкой. Партия всегда маленькая, вкус каждый год свой.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАК ПОЛУЧИТЬ БАНКУ.
+       Осознанно без корзины и без кнопки «Купить»: просто объясняем,
+       как с нами связаться. Контакты заказчик подставит позже. -->
+  <section class="contacts" id="contacts">
+    <div class="wrap contacts-inner">
+      <p class="kicker">Как получить банку</p>
+      <h2>Мёд расходится по своим и по знакомым знакомых</h2>
+      <p class="contacts-lede">
+        Магазина у нас нет, и сайт ничего не продаёт. Если нужен мёд или просто хочется
+        спросить про пасеку — напишите, мы ответим сами. Скажем честно, какой сбор
+        сейчас есть, а какой закончился до следующего лета.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <a href="tel:+70000000000">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            </span>
+            <span class="contact-body">
+              <strong>+7 000 000-00-00</strong>
+              Телефон и WhatsApp — заменить на настоящий
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://t.me/" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.7 3.5 2.9 10.8c-1 .4-1 1.8.1 2.1l4.7 1.4 1.8 5.5c.3.9 1.4 1.1 2 .4l2.6-2.7 4.7 3.5c.8.6 1.9.1 2-.9l2.4-15c.1-.9-.7-1.6-1.5-1.6zM9.6 14.2l-.3 3.6-1.2-3.8 9.1-6.2-7.6 6.4z"/></svg>
+            </span>
+            <span class="contact-body">
+              <strong>Telegram</strong>
+              Пишем и отвечаем сами, без менеджеров
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:info@example.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 8 8-5.2V6.8L12 11.6 4 6.8V7.8L12 13z"/></svg>
+            </span>
+            <span class="contact-body">
+              <strong>info@example.com</strong>
+              Если удобнее написать письмо
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <img src="img/logo.jpg" alt="" width="64" height="64">
+      <div>
+        <p class="footer-name">Пасека «Гнездино»</p>
+        <p class="footer-about">Сохраняем традиции с 1955 года. Мёд качаем и фасуем сами.</p>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Разделы в подвале">
+      <a href="#place">Место</a>
+      <a href="#apiary">Пасека</a>
+      <a href="#photos">Фотографии</a>
+      <a href="#honey">Мёд</a>
+      <a href="#contacts">Связаться</a>
+    </nav>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> Пасека «Гнездино» · гнездино-пасека.рф</p>
+    <p class="credits">
+      Фотографии временные, из свободных источников (Wikimedia Commons).
+      Перед публикацией заменить на снимки со своей пасеки.
+    </p>
+  </div>
+</footer>
+
+<!-- Просмотр фотографии крупно. Показывается только после клика по снимку. -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Предыдущая фотография">&#8249;</button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Следующая фотография">&#8250;</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
